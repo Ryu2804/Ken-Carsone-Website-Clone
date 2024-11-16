@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ken Carson Official Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="Asset/Logo.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container-top">
+        <img class="logo" src="" alt="">
+    </div>
+    <div class="container">
+      <div class="image-placeholder" onclick="move()">
+        <div class="sold-out"></div>
+        <img class="shirt-image" src="Asset/Ken Carson T-Shirt.png" onmouseover="swap()" onmouseleave="back()"/>
+      </div>
+    </div>
+    <div class="container">
+        <div class="text-placeholder">
+            <p>IM OK T-shirt<p>
+            <p>$45.00</p>
+        </div>
+    </div>
+    <footer class="container-bot">
+        <div class="social-media">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+        <div class="text-media">
+            <p style="transform: scaleY(-1);">This Website Is Cloning Of Ken Carson Official Website</p>
+        </div>
+    </footer>
+  </body>
+
+  <script>
+    function swap() {
+      var img = document.querySelector(".shirt-image");
+      if (img) {
+        img.src = "Asset/Ken Carson T-Shirt Hover.png";
+      } else {
+        console.error("Element with class 'shirt-image' not found.");
+      }
+    }
+    function back() {
+      var img = document.querySelector(".shirt-image");
+      if (img) {
+        img.src = "Asset/Ken Carson T-Shirt.png";
+      } else {
+        console.error("Element with class 'shirt-image' not found.");
+      }
+    }
+    function move(){
+        window.location = 'buy.html';
+    }
+  </script>
+</html>
